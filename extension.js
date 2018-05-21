@@ -20,9 +20,7 @@ function runAllTestsInFileExec() {
 }
 
 function runLastCommandInItermExec() {
-    // Display a message box to the user
-    // vscode.window.showInformationMessage('Hello World!');
-    _executeCodeViaChildProcess("!!");
+    _executeCodeViaChildProcess("fc -e : -1");
 }
 
 function runFocusedTestExec() {

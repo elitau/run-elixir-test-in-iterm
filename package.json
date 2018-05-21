@@ -2,7 +2,7 @@
     "name": "run-elixir-test-in-iterm",
     "displayName": "run-elixir-test-in-iterm",
     "description": "Run Elixir Tests from Visual Studio Code within an iTerm window",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "duarde-taulie",
     "repository": {
         "type": "git",
@@ -32,7 +32,7 @@
             },
             {
                 "command": "extension.runLastCommandInIterm",
-                "title": "iTerm: Run last command (!!) executed"
+                "title": "iTerm: Rerun last command in active window"
             },
             {
                 "command": "extension.runFocusedTest",
