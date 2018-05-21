@@ -1,7 +1,7 @@
 {
     "name": "run-elixir-test-in-iterm",
     "displayName": "run-elixir-test-in-iterm",
-    "description": "Run Elixir Tests within an iTerm window",
+    "description": "Run Elixir Tests from Visual Studio Code within an iTerm window",
     "version": "0.0.1",
     "publisher": "duarde-taulie",
     "repository": {
@@ -20,6 +20,7 @@
     ],
     "activationEvents": [
         "onCommand:extension.runAllTestsInFile",
+        "onCommand:extension.runLastCommandInIterm",
         "onCommand:extension.runFocusedTest"
     ],
     "main": "./extension",
@@ -27,11 +28,15 @@
         "commands": [
             {
                 "command": "extension.runAllTestsInFile",
-                "title": "Run all Tests in file in iTerm"
+                "title": "iTerm: Run all Tests in file"
+            },
+            {
+                "command": "extension.runLastCommandInIterm",
+                "title": "iTerm: Run last command (!!) executed"
             },
             {
                 "command": "extension.runFocusedTest",
-                "title": "Run current line of Elixir test file in iTerm"
+                "title": "iTerm: Run current line of Elixir test file"
             }
         ]
     },
