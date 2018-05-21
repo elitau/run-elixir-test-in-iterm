@@ -4,6 +4,14 @@
     "description": "Run Elixir Tests within an iTerm window",
     "version": "0.0.1",
     "publisher": "duarde-taulie",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/elitau/run-elixir-test-in-iterm.git"
+    },
+    "bugs": {
+        "url": "https://github.com/elitau/run-elixir-test-in-iterm/issues"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.23.0"
     },
