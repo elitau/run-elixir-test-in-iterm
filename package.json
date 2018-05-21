@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.runAllTestsInFile",
+        "onCommand:extension.runFocusedTest"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.runAllTestsInFile",
+                "title": "Run all Tests in file in iTerm"
+            },
+            {
+                "command": "extension.runFocusedTest",
+                "title": "Run current line of Elixir test file in iTerm"
             }
         ]
     },
