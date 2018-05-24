@@ -2,6 +2,10 @@
 
 All notable changes to the "run-elixir-test-in-iterm" extension will be documented in this file.
 
+## [0.0.5]
+
+- Fixed configuration of iTerm window activation.
+
 ## [0.0.4]
 
 - Configure if the iTerm window should be activated or not. Defaults to `false`.

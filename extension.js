@@ -36,12 +36,11 @@ function _activeFilePath() {
 }
 
 function _executeCodeViaChildProcess(code) {
-    if (vscode.workspace.getConfiguration('runInIterm.activateWindow')) {
+    if (vscode.workspace.getConfiguration('runInIterm').get('activateWindow') === true) {
         var activateCommand = ` -e 'activate' `;
     } else {
         var activateCommand = '';
     }
-
     const command =
         `osascript ` +
         ` -e 'tell app "iTerm"' ` +

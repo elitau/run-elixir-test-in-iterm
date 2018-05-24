@@ -2,7 +2,7 @@
     "name": "run-elixir-test-in-iterm",
     "displayName": "run-elixir-test-in-iterm",
     "description": "Run Elixir Tests from Visual Studio Code within an iTerm window",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "duarde-taulie",
     "repository": {
         "type": "git",
