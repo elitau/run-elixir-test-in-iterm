@@ -2,7 +2,7 @@
     "name": "run-elixir-test-in-iterm",
     "displayName": "run-elixir-test-in-iterm",
     "description": "Run Elixir Tests from Visual Studio Code within an iTerm window",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "duarde-taulie",
     "repository": {
         "type": "git",
@@ -38,7 +38,18 @@
                 "command": "extension.runFocusedTest",
                 "title": "iTerm: Run current line of Elixir test file"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "Run Command in iTerm configuration",
+            "properties": {
+                "runInIterm.activateWindow": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Activate/Focus iTerm window."
+                }
+            }
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",

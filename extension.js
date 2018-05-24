@@ -36,11 +36,17 @@ function _activeFilePath() {
 }
 
 function _executeCodeViaChildProcess(code) {
+    if (vscode.workspace.getConfiguration('runInIterm.activateWindow')) {
+        var activateCommand = ` -e 'activate' `;
+    } else {
+        var activateCommand = '';
+    }
+
     const command =
         `osascript ` +
         ` -e 'tell app "iTerm"' ` +
         ` -e 'reopen' ` +
-        ` -e 'activate' ` +
+        activateCommand +
         ` -e 'set mysession to current session of current window' ` +
         ` -e 'tell mysession to write text "${code}"' ` +
         ` -e 'end tell'`;
